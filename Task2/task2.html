@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Value Added Task 2</title>
+
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar section -->
+    <aside class="sidebar">
+
+        <!-- Website logo and name -->
+        <div class="logo">
+
+            <img src="images/17.png" alt="Student Logo">
+
+            <h2>Student<br>Portal</h2>
+
+        </div>
+
+
+        <!-- Different pages available in the sidebar -->
+        <nav class="navigation">
+
+            <a href="#dashboard" class="nav-link active">
+
+                <img src="images/08.png" alt="Dashboard">
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="#assignments" class="nav-link">
+
+                <img src="images/12.png" alt="Assignments">
+
+                <span>Assignments</span>
+
+            </a>
+
+
+            <a href="#courses" class="nav-link">
+
+                <img src="images/11.png" alt="Courses">
+
+                <span>Courses</span>
+
+            </a>
+
+
+            <a href="#progress" class="nav-link">
+
+                <img src="images/10.png" alt="Progress">
+
+                <span>Progress</span>
+
+            </a>
+
+
+            <a href="#profile" class="nav-link">
+
+                <img src="images/09.png" alt="Profile">
+
+                <span>Profile</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- Logout option below the menu -->
+        <div class="logout">
+
+            <a href="#logout" class="nav-link">
+
+                <img src="images/08.png" alt="Logout">
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main part of the dashboard -->
+    <main class="main-content" id="dashboard">
+
+
+        <!-- Top bar containing the page title and user details -->
+        <header class="topbar">
+
+            <h1>Dashboard</h1>
+
+            <div class="topbar-right">
+
+                <!-- Notification icon -->
+                <div class="notification">
+
+                    <img src="images/16.png" alt="Notification">
+
+                </div>
+
+
+                <!-- User profile shown on the right side -->
+                <div class="user-profile">
+
+                    <img src="images/04.png" alt="Profile">
+
+                    <span>Vedanti</span>
+
+                    <span class="dropdown-arrow">⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- All dashboard information -->
+        <div class="content">
+
+
+            <!-- Welcome message with an illustration -->
+            <section class="welcome-banner">
+
+                <div class="welcome-text">
+
+                    <h2>Welcome Back, Vedanti! 👋</h2>
+
+                    <p>
+                        Continue your learning journey and complete your
+                        pending assignments.
+                    </p>
+
+                </div>
+
+
+                <div class="welcome-image">
+
+                    <img src="images/18.png"
+                         alt="Learning Illustration">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Cards showing the student's overall information -->
+            <section class="stats-container">
+
+
+                <!-- Total number of courses -->
+                <div class="stat-card purple">
+
+                    <img src="images/04.png" alt="Courses">
+
+                    <div>
+                        <h2>3</h2>
+                        <p>Courses</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Total number of assignments -->
+                <div class="stat-card green">
+
+                    <img src="images/03.png" alt="Assignments">
+
+                    <div>
+                        <h2>12</h2>
+                        <p>Assignments</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Overall learning progress -->
+                <div class="stat-card yellow">
+
+                    <img src="images/02.png" alt="Progress">
+
+                    <div>
+                        <h2>78%</h2>
+                        <p>Progress</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Assignments due this week -->
+                <div class="stat-card pink">
+
+                    <img src="images/01.png" alt="Due This Week">
+
+                    <div>
+                        <h2>5</h2>
+                        <p>Due This Week</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Section containing courses and upcoming assignments -->
+            <section class="dashboard-bottom">
+
+
+                <!-- List of courses enrolled by the student -->
+                <div class="panel courses-panel" id="courses">
+
+                    <h3>Your Courses</h3>
+
+
+                    <!-- First course -->
+                    <div class="course-item">
+
+                        <img src="images/07.png"
+                             alt="Web Development">
+
+                        <div class="course-details">
+
+                            <h4>Web Development</h4>
+
+                            <p>HTML, CSS, JavaScript</p>
+
+                        </div>
+
+
+                        <!-- Course completion percentage -->
+                        <div class="progress-area">
+
+                            <span>80%</span>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill width-80"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Second course -->
+                    <div class="course-item">
+
+                        <img src="images/06.png"
+                             alt="Python Programming">
+
+                        <div class="course-details">
+
+                            <h4>Python Programming</h4>
+
+                            <p>Basics to Advanced</p>
+
+                        </div>
+
+
+                        <div class="progress-area">
+
+                            <span>70%</span>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill width-70"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Third course -->
+                    <div class="course-item">
+
+                        <img src="images/05.png"
+                             alt="Database Systems">
+
+                        <div class="course-details">
+
+                            <h4>Database Systems</h4>
+
+                            <p>SQL, Normalization, Queries</p>
+
+                        </div>
+
+
+                        <div class="progress-area">
+
+                            <span>85%</span>
+
+                            <div class="progress-bar">
+
+                                <div class="progress-fill width-85"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- List of assignments that need to be completed -->
+                <div class="panel assignments-panel" id="assignments">
+
+                    <h3>Upcoming Assignments</h3>
+
+
+                    <!-- First assignment -->
+                    <div class="assignment-item">
+
+                        <img src="images/14.png"
+                             alt="Assignment">
+
+                        <div class="assignment-details">
+
+                            <h4>Create a Responsive Landing Page</h4>
+
+                            <p>Due: 20 Nov 2026</p>
+
+                        </div>
+
+                        <span class="status">Pending</span>
+
+                    </div>
+
+
+
+                    <!-- Second assignment -->
+                    <div class="assignment-item">
+
+                        <img src="images/14.png"
+                             alt="Assignment">
+
+                        <div class="assignment-details">
+
+                            <h4>Array Problem Set</h4>
+
+                            <p>Due: 22 Nov 2026</p>
+
+                        </div>
+
+                        <span class="status">Pending</span>
+
+                    </div>
+
+
+
+                    <!-- Third assignment -->
+                    <div class="assignment-item">
+
+                        <img src="images/14.png"
+                             alt="Assignment">
+
+                        <div class="assignment-details">
+
+                            <h4>DBMS SQL Queries</h4>
+
+                            <p>Due: 25 Nov 2026</p>
+
+                        </div>
+
+                        <span class="status">Pending</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
